@@ -23,7 +23,7 @@ def main():
 
         elif izbor == "2":
             try:
-                f = float(input("Въведи температура в Фаренхайт: "))
+                f = float(input("Въведи температура във Фаренхайт: "))
                 c = fahrenheit_kam_celsius(f)
                 print(f"{f}°F = {c:.2f}°C")
             except ValueError:
@@ -31,3 +31,10 @@ def main():
 
         elif izbor == "3":
             print("Изход. Довиждане!")
+            break
+
+        else:
+            print("⚠️ Невалиден избор. Опитай отново.")
+
+if __name__ == "__main__":
+    main()
